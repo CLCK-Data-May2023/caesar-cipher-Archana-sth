@@ -21,10 +21,6 @@ def encripted_sentences(plain_sentences, shift):
 
 
 plain_sentences=input("please enter a sentences : ")
+plain_sentences=plain_sentences.lower()
 shift=int(input("please enter the number of place to shift : "))
 encripted_sentences(plain_sentences, shift)
-
-
-please enter a sentences : python is fun!
-please enter the number of place to shift : 5
-the encrypted sentences is : udymts nx kzs!
