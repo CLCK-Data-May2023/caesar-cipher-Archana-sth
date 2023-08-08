@@ -1,46 +1,23 @@
 # to get a-z alphabet
-import string
-alphabet = string.ascii_lowercase
+import string 
+alphabet= string.ascii_lowercase
 
-def encryption(plaintext, shift):
-    cipher_text = ""
-    for char in plaintext:
+
+def encripted_sentences(plain_sentences, shift):
+    cipher_sentences = ""
+    for char in plain_sentences:
         if char in alphabet:
-            position = alphabet.index(char)
-            #we need to be within the 26 letter.
+            position=alphabet.index(char)
+            # we need to be within 26 letters.
             new_position = (position+shift)%26
-            cipher_text += alphabet[new_position]
+            cipher_sentences += alphabet[new_position]
         else:
-            # number or space will be print as it is
-           cipher_text += char
-    print("the text after encryption is :", cipher_text)
-    
-    
-def decryption(cipher_text, shift):
-    plaintext = ""
-    for char in cipher_text :
-        if char in alphabet:
-            position = alphabet.index(char)
-            #we need to be within the 26 letter.
-            new_position = (position-shift)%26
-            plaintext += alphabet[new_position]
-        else:
-             # number or space will be print as it is
-            plaintext += char
-    print("the text after decryption is :", plaintext)
+            # number or space will be print as it is.
+            cipher_sentences += char
+    print("the encrypted sentences is :", cipher_sentences)
 
- # if u want to end on 'no'   
-end = False
-while not end:
-    mode = input("type 'encrypt' for encryption, type 'decrypt' for decryption : ")
-    plaintext = input("please enter a sentence : ")
-    shift = int(input("please enter the number of place to shift : "))
-    if mode == "encrypt" :
-        encryption(plaintext, shift)
-    elif mode == "decrypt":
-        decryption(plaintext, shift)
-    play_again = input("type 'yes' to continue, type 'no' to exit : ")
-    if play_again == 'no':
-        end = True
-        print("Have a nice day...")
-    
+
+plain_sentences=input("please enter a sentences : ")
+shift=int(input("please enter the number of place to shift : "))
+encripted_sentences(plain_sentences, shift)
+
