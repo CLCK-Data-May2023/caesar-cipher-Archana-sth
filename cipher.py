@@ -1,10 +1,7 @@
-# to get a-z alphabet.
-import string
-alphabet = string.ascii_lowercase
 # to get a-z alphabet
 import string 
 alphabet= string.ascii_lowercase
-
+shift = 5
 
 def encripted_sentences(plain_sentences, shift):
     cipher_sentences = ""
