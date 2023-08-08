@@ -15,6 +15,5 @@ for char in plain_sentences:
     else:
         # number or space will be print as it is.
         new_message += char
-print("the encrypted sentences is :", new_message)
-#
+print("the encrypted sentences is: ", new_message)
 
