@@ -1,4 +1,3 @@
-
 # to get a-z alphabet.
 import string
 alphabet = string.ascii_lowercase
