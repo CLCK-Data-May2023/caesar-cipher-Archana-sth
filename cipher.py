@@ -4,7 +4,6 @@ alphabet= string.ascii_lowercase
 shift = 5
 plain_sentences=input("please enter a sentences : ")
 
-
 new_message = ""
 for char in plain_sentences:
     if char in alphabet:
