@@ -1,6 +1,6 @@
 # to get a-z alphabet
 import string 
-alphabet= string.ascii_lowercase
+alphabet= string.ascii_letters
 shift = 5
 plain_sentences=input("please enter a sentences : ")
 
@@ -15,4 +15,4 @@ for char in plain_sentences:
     else:
         # number or space will be print as it is.
         new_message += char
-print("the encrypted sentence is: ", new_message)
+print('The encrypted sentence is: ' + new_message)
